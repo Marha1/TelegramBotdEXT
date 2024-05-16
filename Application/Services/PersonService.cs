@@ -15,6 +15,9 @@ public class PersonService
     private readonly IPersonRepository _personRepository;
     private readonly IMapper _mapper;
 
+    public PersonService()
+    {
+    }
     PersonService(IPersonRepository personRepository, IMapper mapper)
     {
         _personRepository = personRepository;

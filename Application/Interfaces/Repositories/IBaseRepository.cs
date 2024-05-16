@@ -26,14 +26,14 @@ public interface IBaseRepository<TEntity> where TEntity : BaseEntity
     /// </summary>
     /// <param name="entity">Сущность на добавление.</param>
     /// <returns>Созданная сущнсоть.</returns>
-    public TEntity Create(TEntity entity);
+    public void Create(TEntity entity);
 
     /// <summary>
     /// Обновление
     /// </summary>
     /// <param name="entity">Сущность на обновление.</param>
     /// <returns>Обновленная сущсноть.</returns>
-    public TEntity Update(TEntity entity);
+    public bool Update(TEntity entity);
 
     /// <summary>
     /// Удаление
